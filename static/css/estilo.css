@@ -1,0 +1,72 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #2a2a2a;
+  background: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { display: block; max-width: 100%; }
+
+/* ---- HEADER --------------------------------------------------------------------------------------------------------------------------------------------- */
+header {
+  background: #5b3dc9;
+  border-bottom: 4px solid #aa8aff;
+  box-shadow: 0 2px 12px #ff6fbe1a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo {
+  height: 64px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+.logo:hover { transform: scale(1.04); }
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+nav ul li a {
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: color 0.3s, background 0.3s, transform 0.2s;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  color: white;
+  background: #aa8aff;
+  transform: scale(1.06);
+}
