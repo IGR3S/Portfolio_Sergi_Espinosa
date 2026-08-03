@@ -12,7 +12,7 @@ require_once("templates/header.php");
     <title>Document</title>
 </head>
 <body>
-    
+    <img class="card-img" src="static/img/banner_tecnologias.png" alt="">
 </body>
 </html>
 
